@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-   <link rel="stylesheet" type="text/css" href="front.css">
-   </head>
-      <title>What?</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="front.css">
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <title>What?</title>
       <!-- <link rel="stylesheet"type="text/css" href="front.css.erb"> -->
-  </head>
-  <body>
-    <div id= "main_container">
-      <div id="header">
-        <div id="free_logo">
-          <p>upfreelancer</p>
-            <div class="login_form">
-              <form>
-                <table>
-                  <tbody>
-                    <tr>
-
-                      <td><input type="text" placeholder="Email"></td>
-                      <td><input type="password" placeholder="Password"></td>
-                      <td><input type="button" value="Log In"></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </form>
-            </div>
-
-        </div>
-
-      </div>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.css">
+    </head>
+    <div id="free_logo">
+        <p>upfreelancer</p>
+        <p>  </p>
     </div>
+    <body id="whole">
+        <div id="main_container">
+            <div class="ui middle aligned center aligned grid" >
+                <div class="column seven wide center aligned">
+                    
+                        <form class="ui mini form">
+                          <div class="ui stacked segment">
+                            <div class="field">
+                              <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="email" placeholder="E-mail address">
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input type="password" name="password" placeholder="Password">
+                              </div>
+                            </div>
+                            <div class="ui fluid large teal submit button">Login</div>
+                          </div>
+                          <div class="ui error message"></div>
+                        </form>
+
+              </div>
+              <div width=100px></div>
+              <div class="column seven wide center aligned">
+                  <div id="MinForm">
+                      <form class="ui mini form">
+                          <div class="field">
+                              <label>First Name</label>
+                              <input name="email" placeholder="E-mail Address" type="text">
+                          </div>
+                          <div class="field">
+                              <label>Last Name</label>
+                              <input name="last-name" placeholder="Last Name" type="text">
+                          </div>
+                          <div class="field">
+                              <div class="ui checkbox">
+                              <input tabindex="0" class="hidden" type="checkbox">
+                              <label>I agree to the Terms and Conditions</label>
+                              </div>
+                          </div>
+                          <button class="ui button" type="submit">Submit</button>
+                      </form>
+                </div>
+            </div>
+          </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.js"></script>
+      </div>
   </body>
 </html>
