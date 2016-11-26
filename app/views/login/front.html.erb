@@ -7,17 +7,20 @@
       <!-- <link rel="stylesheet"type="text/css" href="front.css.erb"> -->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.css">
     </head>
-    <div id="free_logo">
-        <p>upfreelancer</p>
-        <p>  </p>
-    </div>
+
     <body id="whole">
+      <div id="free_logo">
+          <p>upfreelancer</p>
+          <p>  </p>
+      </div>
         <div id="main_container">
             <div class="ui middle aligned center aligned grid" >
-                <div class="column seven wide center aligned">
-                    
-                        <form class="ui mini form">
+                <div class="column seven wide center aligned" id="login_column">
+                        <form class="ui mini form" id="login_form">
                           <div class="ui stacked segment">
+                            <p id="login_text">
+                              Log-in
+                            </p>
                             <div class="field">
                               <div class="ui left icon input">
                                 <i class="user icon"></i>
@@ -30,33 +33,81 @@
                                 <input type="password" name="password" placeholder="Password">
                               </div>
                             </div>
-                            <div class="ui fluid large teal submit button">Login</div>
+                            <div class="ui animated fade fluid large submit button" tabindex="0">
+                              <div class="visible content">Login</div>
+                                <div class="hidden content">
+                                  <i class="right arrow icon"></i>
+                                </div>
+                              </div>
                           </div>
                           <div class="ui error message"></div>
                         </form>
-
               </div>
               <div width=100px></div>
-              <div class="column seven wide center aligned">
-                  <div id="MinForm">
-                      <form class="ui mini form">
-                          <div class="field">
-                              <label>First Name</label>
-                              <input name="email" placeholder="E-mail Address" type="text">
-                          </div>
-                          <div class="field">
-                              <label>Last Name</label>
-                              <input name="last-name" placeholder="Last Name" type="text">
-                          </div>
-                          <div class="field">
-                              <div class="ui checkbox">
-                              <input tabindex="0" class="hidden" type="checkbox">
-                              <label>I agree to the Terms and Conditions</label>
+              <div class="column nine wide center aligned" id="signup_column">
+
+                      <form class="ui mini form" id="signup_form">
+                        <div class="ui stacked segment">
+                            <p id="login_text">
+                              Sign Up Now!
+                            </p>
+                            <div class="two fields">
+                              <div class="field">
+                                <div class="ui input">
+                                  <input type="text" name="firstname" placeholder="First Name">
+                                </div>
                               </div>
+                              <div class="field">
+                                <div class="ui input">
+                                  <input type="text" name="lastname" placeholder="Lastname">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="two fields">
+                              <div class="field">
+                                <div class="ui input">
+                                  <input type="text" name="studentnumber" placeholder="SN<20xx-xxxxx>">
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="ui input">
+                                  <input type="text" name="college" placeholder="College">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="two fields">
+                              <div class="field">
+                                <div class="ui input">
+                                  <input type="text" name="year" placeholder="Year">
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="ui input">
+                                  <input type="text" name="course" placeholder="Course">
+                                </div>
+                              </div>
+                            </div>
+
+
+                          <div class="two fields">
+                            <div class="field">
+                              <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="email" placeholder="E-mail address">
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui left icon input" >
+                                <i class="lock icon"></i>
+                                <input type="password" name="password" placeholder="Password" >
+                              </div>
+                            </div>
                           </div>
-                          <button class="ui button" type="submit">Submit</button>
+                          <div class="ui fluid large teal submit button" id=mode>Login</div>
+                        </div>
+                        <div class="ui error message"></div>
                       </form>
-                </div>
+
             </div>
           </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.js"></script>
