@@ -6,9 +6,78 @@
         <title>What?</title>
       <!-- <link rel="stylesheet"type="text/css" href="front.css.erb"> -->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
     </head>
 
     <body id="whole">
+      <div class="ui modal">
+        <i class="close icon"></i>
+        <form class="ui mini form" id="signup_form">
+          <div class="ui stacked segment">
+              <p id="login_text">
+                Sign Up Now!
+              </p>
+              <div class="two fields">
+                <div class="field">
+                  <div class="ui input">
+                    <input type="text" name="firstname" placeholder="First Name">
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui input">
+                    <input type="text" name="lastname" placeholder="Lastname">
+                  </div>
+                </div>
+              </div>
+              <div class="two fields">
+                <div class="field">
+                  <div class="ui input">
+                    <input type="text" name="studentnumber" placeholder="SN<20xx-xxxxx>">
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui input">
+                    <input type="text" name="college" placeholder="College">
+                  </div>
+                </div>
+              </div>
+              <div class="two fields">
+                <div class="field">
+                  <div class="ui input">
+                    <input type="text" name="year" placeholder="Year">
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui input">
+                    <input type="text" name="course" placeholder="Course">
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="two fields">
+              <div class="field">
+                <div class="ui left icon input">
+                  <i class="user icon"></i>
+                  <input type="text" name="email" placeholder="E-mail address">
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui left icon input" >
+                  <i class="lock icon"></i>
+                  <input type="password" name="password" placeholder="Password" >
+                </div>
+              </div>
+            </div>
+            <div class="ui fluid large teal submit button" id=mode>Login</div>
+          </div>
+          <div class="ui error message"></div>
+        </form>
+      </div>
+      <script>
+      $('.ui.modal').modal('show')
+      </script>
       <div id="free_logo">
           <p>upfreelancer</p>
           <p>  </p>
@@ -17,7 +86,7 @@
             <div class="ui middle aligned center aligned grid" >
                 <div class="column seven wide center aligned" id="login_column">
                         <form class="ui mini form" id="login_form">
-                          <div class="ui stacked segment">
+                          <div class="ui stacked segment"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
                             <p id="login_text">
                               Log-in
                             </p>
