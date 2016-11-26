@@ -2,184 +2,125 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="front.css">
-        <link rel="icon" type="image/png" href="favicon.png" />
-        <title>What?</title>
-      <!-- <link rel="stylesheet"type="text/css" href="front.css.erb"> -->
+        <title>UP Freelancer</title>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
     </head>
 
-    <body id="whole">
-      <div class="ui modal">
-        <i class="close icon"></i>
-        <form class="ui mini form" id="signup_form">
-          <div class="ui stacked segment">
-              <p id="login_text">
-                Sign Up Now!
-              </p>
-              <div class="two fields">
-                <div class="field">
-                  <div class="ui input">
-                    <input type="text" name="firstname" placeholder="First Name">
-                  </div>
-                </div>
-                <div class="field">
-                  <div class="ui input">
-                    <input type="text" name="lastname" placeholder="Lastname">
-                  </div>
-                </div>
-              </div>
-              <div class="two fields">
-                <div class="field">
-                  <div class="ui input">
-                    <input type="text" name="studentnumber" placeholder="SN<20xx-xxxxx>">
-                  </div>
-                </div>
-                <div class="field">
-                  <div class="ui input">
-                    <input type="text" name="college" placeholder="College">
-                  </div>
-                </div>
-              </div>
-              <div class="two fields">
-                <div class="field">
-                  <div class="ui input">
-                    <input type="text" name="year" placeholder="Year">
-                  </div>
-                </div>
-                <div class="field">
-                  <div class="ui input">
-                    <input type="text" name="course" placeholder="Course">
-                  </div>
-                </div>
-              </div>
-
-
-            <div class="two fields">
-              <div class="field">
-                <div class="ui left icon input">
-                  <i class="user icon"></i>
-                  <input type="text" name="email" placeholder="E-mail address">
-                </div>
-              </div>
-              <div class="field">
-                <div class="ui left icon input" >
-                  <i class="lock icon"></i>
-                  <input type="password" name="password" placeholder="Password" >
-                </div>
-              </div>
-            </div>
-            <div class="ui fluid large teal submit button" id=mode>Login</div>
-          </div>
-          <div class="ui error message"></div>
-        </form>
-      </div>
-      <script>
-      $('.ui.modal').modal('show')
-      </script>
-      <div id="free_logo">
-          <p>upfreelancer</p>
-          <p>  </p>
-      </div>
-        <div id="main_container">
-            <div class="ui middle aligned center aligned grid" >
-                <div class="column seven wide center aligned" id="login_column">
-                        <form class="ui mini form" id="login_form">
-                          <div class="ui stacked segment"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-                            <p id="login_text">
-                              Log-in
-                            </p>
-                            <div class="field">
-                              <div class="ui left icon input">
+    <body id="page">
+        <!-- start of sign sheet modal -->
+        <div class="ui modal">
+            <i class="close icon"></i>
+            <form class="ui mini form" id="home_form">
+                <div class="ui stacked segment">
+                    <p id="login_text" style="font-weight:bolder;">
+                        Join UP Freelancer today!
+                    </p>
+                    <div class="two fields">
+                        <div class="field">
+                            <div class="ui input">
+                                <input type="text" name="firstname" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui input">
+                                <input type="text" name="lastname" placeholder="Lastname">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two fields">
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" name="studentnumber" placeholder="SN<20xx-xxxxx>">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" name="college" placeholder="College">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="two fields">
+                        <div class="field">
+                            <div class="ui input">
+                                <input type="text" name="year" placeholder="Year">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui input">
+                                <input type="text" name="course" placeholder="Course">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two fields">
+                        <div class="field">
+                            <div class="ui left icon input">
                                 <i class="user icon"></i>
                                 <input type="text" name="email" placeholder="E-mail address">
-                              </div>
                             </div>
-                            <div class="field">
-                              <div class="ui left icon input">
-                                <i class="lock icon"></i>
-                                <input type="password" name="password" placeholder="Password">
-                              </div>
-                            </div>
-                            <div class="ui animated fade fluid large submit button" tabindex="0">
-                              <div class="visible content">Login</div>
-                                <div class="hidden content">
-                                  <i class="right arrow icon"></i>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="ui error message"></div>
-                        </form>
-              </div>
-              <div width=100px></div>
-              <div class="column nine wide center aligned" id="signup_column">
-
-                      <form class="ui mini form" id="signup_form">
-                        <div class="ui stacked segment">
-                            <p id="login_text">
-                              Sign Up Now!
-                            </p>
-                            <div class="two fields">
-                              <div class="field">
-                                <div class="ui input">
-                                  <input type="text" name="firstname" placeholder="First Name">
-                                </div>
-                              </div>
-                              <div class="field">
-                                <div class="ui input">
-                                  <input type="text" name="lastname" placeholder="Lastname">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="two fields">
-                              <div class="field">
-                                <div class="ui input">
-                                  <input type="text" name="studentnumber" placeholder="SN<20xx-xxxxx>">
-                                </div>
-                              </div>
-                              <div class="field">
-                                <div class="ui input">
-                                  <input type="text" name="college" placeholder="College">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="two fields">
-                              <div class="field">
-                                <div class="ui input">
-                                  <input type="text" name="year" placeholder="Year">
-                                </div>
-                              </div>
-                              <div class="field">
-                                <div class="ui input">
-                                  <input type="text" name="course" placeholder="Course">
-                                </div>
-                              </div>
-                            </div>
-
-
-                          <div class="two fields">
-                            <div class="field">
-                              <div class="ui left icon input">
-                                <i class="user icon"></i>
-                                <input type="text" name="email" placeholder="E-mail address">
-                              </div>
-                            </div>
-                            <div class="field">
-                              <div class="ui left icon input" >
+                        </div>
+                        <div class="field">
+                            <div class="ui left icon input" >
                                 <i class="lock icon"></i>
                                 <input type="password" name="password" placeholder="Password" >
-                              </div>
                             </div>
-                          </div>
-                          <div class="ui fluid large teal submit button" id=mode>Login</div>
+                        </div>
+                    </div>
+                    <div class="ui fluid large submit button" style="background-color:#421b05">Sign Up</div>
+                </div>
+            </form>
+        </div>
+        <!-- end of signup sheet modal -->
+        <!-- start of login page -->
+        <div id="main_container">
+            <div class="ui middle aligned center aligned grid" >
+                <div class="column" id="home_column">
+                    <img class="ui small circular middle aligned centered raised image" src="<%= image_url('favicon.jpeg') %>" id="logo">
+                    <form class="ui mini form" id="home_form">
+                        <div class="ui raised segment">
+                            <p id="login_text" style="color:#421b05;font-weight:600;">
+                                Log-in to your account
+                            </p>
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="user icon"></i>
+                                    <input type="text" name="email" placeholder="E-mail address">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="lock icon"></i>
+                                    <input type="password" name="password" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="ui animated fade fluid large submit button" tabindex="0" style="background-color:#421b05;color:white;">
+                                <div class="visible content">Login</div>
+                                <div class="hidden content">
+                                    <i class="right arrow icon"></i>
+                                </div>
+                            </div>
                         </div>
                         <div class="ui error message"></div>
-                      </form>
-
+                    </form>
+                    <div class="ui raised segment" id="home_form">
+                        Want to earn?
+                        <button class="link" id="signup_modal"> Sign Up Today!</a>
+                    </div>
+                </div>
             </div>
-          </div>
+          <!-- end of login page -->
+
+        </div>
+        <!-- start script code for modal button -->
+        <script type="text/javascript">
+            $('#signup_modal').on('click', function(){
+            $('.ui.modal').modal('show');
+            });
+        </script>
+        <!-- end of script code for modal button -->
+        <!-- link to semantic ui -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.js"></script>
-      </div>
-  </body>
+        <!-- end -->
+    </body>
 </html>
