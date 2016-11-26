@@ -10,7 +10,7 @@
 
     <body id="page">
         <!-- start of sign sheet modal -->
-        <div class="ui modal">
+        <div class="ui small modal">
             <i class="close icon"></i>
             <form class="ui mini form" id="home_form">
                 <div class="ui stacked segment">
@@ -67,13 +67,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ui fluid large submit button" style="background-color:#421b05">Sign Up</div>
+                    <div class="ui fluid large submit button" style="background-color:#421b05;color:white;">Sign Up</div>
                 </div>
             </form>
         </div>
         <!-- end of signup sheet modal -->
         <!-- start of login page -->
-        <div id="main_container">
+        <div id="overall_container">
             <div class="ui middle aligned center aligned grid" >
                 <div class="column" id="home_column">
                     <img class="ui small circular middle aligned centered raised image" src="<%= image_url('favicon.jpeg') %>" id="logo">
@@ -105,7 +105,7 @@
                     </form>
                     <div class="ui raised segment" id="home_form">
                         Want to earn?
-                        <button class="link" id="signup_modal"> Sign Up Today!</a>
+                        <button class="link" id="modal_button"> Sign Up Today!</a>
                     </div>
                 </div>
             </div>
@@ -114,8 +114,8 @@
         </div>
         <!-- start script code for modal button -->
         <script type="text/javascript">
-            $('#signup_modal').on('click', function(){
-            $('.ui.modal').modal('show');
+            $('#modal_button').on('click', function(){
+            $('.ui.small.modal').modal('show');
             });
         </script>
         <!-- end of script code for modal button -->
