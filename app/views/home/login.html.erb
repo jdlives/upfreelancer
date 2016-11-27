@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="front.css">
+        <%= stylesheet_link_tag "login.css.erb"%>
         <title>UP Freelancer</title>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.css">
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
@@ -12,7 +12,7 @@
         <!-- start of sign sheet modal -->
         <div class="ui small modal">
             <i class="close icon"></i>
-            <form class="ui mini form" id="home_form">
+            <form class="ui mini form">
                 <div class="ui stacked segment">
                     <p id="login_text" style="font-weight:bolder;">
                         Join UP Freelancer today!
@@ -75,9 +75,9 @@
         <!-- start of login page -->
         <div id="overall_container">
             <div class="ui middle aligned center aligned grid" >
-                <div class="column" id="home_column">
+                <div class="column">
                     <img class="ui small circular middle aligned centered raised image" src="<%= image_url('favicon.jpeg') %>" id="logo">
-                    <form class="ui mini form" id="home_form">
+                    <form class="ui mini form">
                         <div class="ui raised segment">
                             <p id="login_text" style="color:#421b05;font-weight:600;">
                                 Log-in to your account
@@ -103,7 +103,7 @@
                         </div>
                         <div class="ui error message"></div>
                     </form>
-                    <div class="ui raised segment" id="home_form">
+                    <div class="ui raised segment">
                         Want to earn?
                         <button class="link" id="modal_button"> Sign Up Today!</a>
                     </div>
